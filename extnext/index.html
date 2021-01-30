@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanjut baca</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+
+        }
+        .main{
+            font-size: large;
+            display: flex;
+            flex-direction: column;
+            padding:8px 5px;
+        }
+        .main input{
+            padding: 5px;
+            outline: none;
+            border: none;
+            box-shadow: 3px 2px 8px 0px #cccccc;
+        }
+        .main button{
+            margin-top: 5px;
+            padding: 5px 0;
+            background-color:rgb(82 143 234);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 2px 3px 3px #ccc;
+            width: 98%;
+            margin: 3px;
+
+        }
+        .main button:hover{
+            background-color: rgb(92 119 158);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <label for="judul">Judul Halaman :</label>
+        <input type="text" name="judul" id="judul" disabled placeholder="Title saat ini">
+        <label for="url">Url :</label>
+        <input type="text" name="url" id="url" autofocus placeholder="Masukan Url">
+        <div style="display: flex; flex-direction: row;">
+            <div>
+                <label for="seas">Season :</label>
+                <input type="text" id="seas" disabled placeholder="develop">
+            </div>
+            <div>
+                <label for="chap" id="labelChap">Chapter :</label>
+                <input type="text" id="chap">
+                <div style="display: flex; flex-direction: row; align-items: center;">
+                    <input type="checkbox" id="usezero" style="transform: scale(1.2); margin-right: 8px;">
+                    <label for="usezero">Use Zero</label>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+            <button type="button" id="prev">Prev</button>
+            <button type="button" id="next">Next</button>
+        </div>
+    </div>
+    <script src="background.js"></script>
+</body>
+</html>
