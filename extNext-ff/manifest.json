@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "NextPage",
+  "author": "Sandy",
+  "version": "1.1.1",
+  "description": "Next Page Ez",
+  "icons": {
+      "48": "assets/img/right-arrow-48.png"
+  },
+  "browser_action": {
+      "default_icon": {
+        "48": "assets/img/right-arrow-48.png"
+      },
+      "default_title": "Next Page",
+      "default_popup": "popup.html"
+  },
+  "permissions": [
+      "tabs",
+      "activeTab"
+  ],
+  "applications": {
+      "gecko": {
+          "id": "nexturl@ext_sandy",
+          "strict_min_version": "54.0"
+      }
+  }
+}
